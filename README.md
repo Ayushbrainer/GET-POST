@@ -14,3 +14,7 @@ I have also implemented the "fake" POST method which just fools the response int
 
 # Posts!
 <img src="https://github.com/Ayushbrainer/get-post/blob/master/Screenshot_1608921754.png" alt="drawing" width="200"/>
+This is the page where you can see all the posts taken from the placeholder API.
+
+# POST-REQOUEST!
+<img src="https://github.com/Ayushbrainer/get-post/blob/master/Screenshot_1608922791.png" alt="ss of post page" width = "200">
