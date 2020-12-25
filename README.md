@@ -13,4 +13,4 @@ I have also implemented the "fake" POST method which just fools the response int
   - There is a bottom navigation bar animation when changing pages
 
 # Posts!
-![ss of home page](https://github.com/Ayushbrainer/get-post/blob/master/Screenshot_1608921754.png = 100x25)
+<img src="https://github.com/Ayushbrainer/get-post/blob/master/Screenshot_1608921754.png" alt="drawing" width="200"/>
