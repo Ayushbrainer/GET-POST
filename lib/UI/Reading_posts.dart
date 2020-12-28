@@ -55,13 +55,13 @@ class _reading_postsState extends State<reading_posts> {
     return ListView.builder(
       itemCount: data.length,
       itemBuilder: (context, index) {
-        if (i != 0) {
-          if (Hive.box('posts').getAt(index) != data[index]) {
-            Hive.box('posts').add(data[index]);
-          }
-        } else {
-          Hive.box('posts').add(data[index]);
-        }
+//         if (i != 0) {
+//           if (Hive.box('posts').getAt(index) != data[index]) {
+//             Hive.box('posts').add(data[index]);
+//           }
+//         } else {
+           Hive.box('posts').put(index,data[index]);
+//         }
         return readCard(
           id: data[index].id,
           title: data[index].title,
