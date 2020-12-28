@@ -1,16 +1,21 @@
 # silent_hill_intern
 
-A new Flutter application.
 
-## Getting Started
+# get-post
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+get-post is an app which takes data from jsonPlaceholderAPI and represents it in a list form.
+I have also implemented the "fake" POST method which just fools the response into thinking that it has been posted while not actually updating their API. 
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  - Has a simple UI
+  - There is a bottom navigation bar animation when changing pages
+
+# Posts!
+<img src="https://github.com/Ayushbrainer/get-post/blob/master/Screenshot_1608921754.png" alt="drawing" width="200"/>
+This is the page where you can see all the posts taken from the placeholder API.
+
+# POST-REQUEST!
+<img src="https://github.com/Ayushbrainer/get-post/blob/master/Screenshot_1608922791.png" alt="ss of post page" width = "200">
+This is the page where you can make a POST request(fake) to the placeholder API.
