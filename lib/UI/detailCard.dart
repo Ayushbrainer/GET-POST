@@ -17,21 +17,23 @@ class detailedPost{
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Container(
-                margin: EdgeInsets.only(bottom: 12),
-                child: Flexible(child: Text("$title",style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 37.0
-                ),
-                ),
+              Flexible(
+                child: Container(
+                  margin: EdgeInsets.only(bottom: 12),
+                  child: Text("$title",style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 37.0
+                  ),
+                  ),
                 ),
               ),
-              Container(
-                child: Flexible(child: Text("$body",
-                style: TextStyle(
-                  fontSize: 30.0
-                ),
-                ),
+              Flexible(
+                child: Container(
+                  child: Text("$body",
+                  style: TextStyle(
+                    fontSize: 30.0
+                  ),
+                  ),
                 ),
               ),
             ],

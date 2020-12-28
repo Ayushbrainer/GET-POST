@@ -1,17 +1,19 @@
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-// import 'package:hive/hive.dart';
+import 'package:hive/hive.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-// import 'package:path_provider/path_provider.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:silent_hill_intern/UI/Reading_posts.dart';
 import 'package:silent_hill_intern/UI/Write%20Post.dart';
+import 'json_code/PODO.dart';
 
+int i = 0;
 void main() async {
-  // WidgetsFlutterBinding.ensureInitialized();
-  // Directory directory = await getApplicationDocumentsDirectory();
-  // Hive.init(directory.path);
-  // await Hive.openBox<Post>("posts");
+  WidgetsFlutterBinding.ensureInitialized();
+  Directory directory = await getApplicationDocumentsDirectory();
+  Hive.init(directory.path);
+  Hive.registerAdapter(PostAdapter());
   runApp(MaterialApp(
     home: main_page(),
   ));
@@ -27,6 +29,7 @@ class _main_pageState extends State<main_page> {
   int _currentIndex = 0;
   bool page = true;
   String appTitle = "Read Posts Written By Everyone";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,11 +52,11 @@ class _main_pageState extends State<main_page> {
           items: [
             BottomNavigationBarItem(
                 icon: Icon(MdiIcons.book),
-                title: Text(""),
+                label: "",
                 backgroundColor: Colors.deepPurple),
             BottomNavigationBarItem(
                 icon: Icon(MdiIcons.typewriter),
-                title: Text(""),
+                label: "",
                 backgroundColor: Colors.redAccent)
           ],
           onTap: (index) {
@@ -71,5 +74,12 @@ class _main_pageState extends State<main_page> {
             });
           },
         ));
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    Hive.close();
+    super.dispose();
   }
 }
