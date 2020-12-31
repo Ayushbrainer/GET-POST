@@ -1,6 +1,3 @@
-# silent_hill_intern
-
-
 # get-post
 
 
